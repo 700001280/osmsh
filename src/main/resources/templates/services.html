@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+	xmlns:sd="http://www.thymeleaf.org/spring-data">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title th:text=#{company.title}>OSMPEC</title>
+
+<!-- Bootstrap Core CSS -->
+<link href="../../esourcses/vendor/bootstrap/css/bootstrap.css"
+	rel="stylesheet"
+	th:href="@{/webjars/bootstrap/dist/css/bootstrap.css}" />
+
+<!-- Custom Fonts -->
+<link
+	href="../../../resources/vendor/font-awesome/css/font-awesome.min.css"
+	rel="stylesheet" type="text/css"
+	th:href="@{/webjars/font-awesome/css/font-awesome.min.css}" />
+
+<!-- Animate Css -->
+<link href="../../../resources/css/animate.css"
+	rel="stylesheet" th:href="@{/public/css/animate.css}" />
+	
+<!-- PrettyPhoto Css -->
+<link href="../../../resources/css/prettyPhoto.css"
+	rel="stylesheet" th:href="@{/public/css/prettyPhoto.css}" />
+
+<!-- Style Css -->
+<link href="../../../public/css/style.css"
+	rel="stylesheet" th:href="@{/public/css/style.css}" />
+
+<!-- jQuery -->
+<script src="../../../webjars/jquery/dist/jquery.min.js"
+	th:src="@{/webjars/jquery/dist/jquery.min.js}"></script>
+	
+<!-- Bootstrap Core JavaScript -->
+<script src="../../../webjars/bootstrap/dist/js/bootstrap.min.js"
+	th:src="@{/webjars/bootstrap/dist/js/bootstrap.min.js}"></script>
+	
+	
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="../../../public/js/jquery.prettyPhoto.js"
+	th:src="@{/public/js/jquery.prettyPhoto.js}"></script>
+
+	<script src="../../../public/js/jquery.isotope.min.js"
+	th:src="@{/public/js/jquery.isotope.min.js}"></script>
+	
+	<script src="../../../public/js/wow.min.js"
+	th:src="@{/public/js/wow.min.js}"></script>
+	
+	<script src="../../../public/js/functions.js"
+	th:src="@{/public/js/functions.js}"></script>
+
+</head>
+<body>
+	<div th:replace="fragments/header :: header">&nbsp;</div>
+	
+	<div id="breadcrumb">
+		<div class="container">	
+			<div class="breadcrumb">							
+				<li><a href="index.html" th:href="@{/}" th:text=#{company.nav.home}>Home</a></li>
+				<li th:text=#{company.nav.services}>About Us</li>			
+			</div>		
+		</div>	
+	</div>
+	
+	<div class="services">
+		<div class="container">
+			<h3>Company Services</h3>
+			<hr>
+			<div class="col-md-6">
+				<img src="images/4.jpg" th:src="@{/public/images/4.jpg}" class="img-responsive">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus interdum erat 
+				libero, pulvinar tincidunt leo consectetur eget. Curabitur lacinia pellentesque
+				libero, pulvinar tincidunt leo consectetur eget. Curabitur lacinia pellentesque
+				libero, pulvinar tincidunt leo consectetur eget. Curabitur lacinia pellentesque</p>
+			</div>
+			
+			<div class="col-md-6">
+				<div class="media">
+					<ul>
+						<li>
+							<div class="media-left">
+								<i class="fa fa-pencil"></i>						
+							</div>
+							<div class="media-body">
+								<h4 class="media-heading">Web Development</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus interdum erat 
+								libero, pulvinar tincidunt leo consectetur eget.</p>
+							</div>
+						</li>
+						<li>
+							<div class="media-left">
+								<i class="fa fa-book"></i>						
+							</div>
+							<div class="media-body">
+								<h4 class="media-heading">Responsive Design</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus interdum erat 
+								libero, pulvinar tincidunt leo consectetur eget.</p>
+							</div>
+						</li>
+						<li>
+							<div class="media-left">
+								<i class="fa fa-rocket"></i>						
+							</div>
+							<div class="media-body">
+								<h4 class="media-heading">Bootstrap Themes</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus interdum erat 
+								libero, pulvinar tincidunt leo consectetur eget.</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>	
+	
+	<div class="sub-services">
+		<div class="container">
+			<div class="col-md-6">
+				<div class="media">
+					<ul>
+						<li>
+							<div class="media-left">
+								<i class="fa fa-pencil"></i>						
+							</div>
+							<div class="media-body">
+								<h4 class="media-heading">Landing Page</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus interdum erat 
+								libero, pulvinar tincidunt leo consectetur eget.</p>
+							</div>
+						</li>
+						<li>
+							<div class="media-left">
+								<i class="fa fa-book"></i>						
+							</div>
+							<div class="media-body">
+								<h4 class="media-heading">Training</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus interdum erat 
+								libero, pulvinar tincidunt leo consectetur eget.</p>
+							</div>
+						</li>
+						<li>
+							<div class="media-left">
+								<i class="fa fa-rocket"></i>						
+							</div>
+							<div class="media-body">
+								<h4 class="media-heading">Logo Design</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus interdum erat 
+								libero, pulvinar tincidunt leo consectetur eget.</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+						
+			<div class="col-md-6">
+				<img src="images/4.jpg" th:src="@{/public/images/4.jpg}" class="img-responsive">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus interdum erat 
+				libero, pulvinar tincidunt leo consectetur eget. Curabitur lacinia pellentesque
+				libero, pulvinar tincidunt leo consectetur eget. Curabitur lacinia pellentesque
+				libero, pulvinar tincidunt leo consectetur eget. Curabitur lacinia pellentesque</p>
+			</div>
+		</div>
+	</div>
+	
+	
+<div th:replace="fragments/footer :: footer">&copy; 2016 OSMSH</div>
+
+    
+</body>
+</html>

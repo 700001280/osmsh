@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+	xmlns:sd="http://www.thymeleaf.org/spring-data">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title th:text=#{company.title}>OSMPEC</title>
+
+<!-- Bootstrap Core CSS -->
+<link href="..r../../esourcses/vendor/bootstrap/css/bootstrap.css"
+	rel="stylesheet"
+	th:href="@{/webjars/bootstrap/dist/css/bootstrap.css}" />
+
+<!-- Custom Fonts -->
+<link
+	href="../../../resources/vendor/font-awesome/css/font-awesome.min.css"
+	rel="stylesheet" type="text/css"
+	th:href="@{/webjars/font-awesome/css/font-awesome.min.css}" />
+
+<!-- Animate Css -->
+<link href="../../../resources/css/animate.css"
+	rel="stylesheet" th:href="@{/public/css/animate.css}" />
+	
+<!-- PrettyPhoto Css -->
+<link href="../../../resources/css/prettyPhoto.css"
+	rel="stylesheet" th:href="@{/public/css/prettyPhoto.css}" />
+
+<!-- Style Css -->
+<link href="../../../public/css/style.css"
+	rel="stylesheet" th:href="@{/public/css/style.css}" />
+
+<!-- jQuery -->
+<script src="../../../webjars/jquery/dist/jquery.min.js"
+	th:src="@{/webjars/jquery/dist/jquery.min.js}"></script>
+	
+<!-- Bootstrap Core JavaScript -->
+<script src="../../../webjars/bootstrap/dist/js/bootstrap.min.js"
+	th:src="@{/webjars/bootstrap/dist/js/bootstrap.min.js}"></script>
+	
+	
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="../../../public/js/jquery.prettyPhoto.js"
+	th:src="@{/public/js/jquery.prettyPhoto.js}"></script>
+
+	<script src="../../../public/js/jquery.isotope.min.js"
+	th:src="@{/public/js/jquery.isotope.min.js}"></script>
+	
+	<script src="../../../public/js/wow.min.js"
+	th:src="@{/public/js/wow.min.js}"></script>
+	
+	<script src="../../../public/js/functions.js"
+	th:src="@{/public/js/functions.js}"></script>
+
+</head>
+<body>
+	<div th:replace="fragments/header :: header">&nbsp;</div>
+	
+	<div id="breadcrumb">
+		<div class="container">	
+			<div class="breadcrumb">							
+				<li><a href="index.html" th:href="@{/}" th:text=#{company.nav.home}>Home</a></li>
+				<li th:text=#{company.nav.portfolio}>About Us</li>			
+			</div>		
+		</div>	
+	</div>
+	
+	<section id="portfolio">	
+        <div class="container">
+            <div class="center">
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt</p>
+            </div>
+
+            <ul class="portfolio-filter text-center">
+                <li><a class="btn btn-default active" href="#" data-filter="*">All Works</a></li>
+                <li><a class="btn btn-default" href="#" data-filter=".bootstrap">Creative</a></li>
+                <li><a class="btn btn-default" href="#" data-filter=".html">Photography</a></li>
+                <li><a class="btn btn-default" href="#" data-filter=".wordpress">Web Development</a></li>
+            </ul><!--/#portfolio-filter-->
+		</div>
+		<div class="container">
+            <div class="">
+                <div class="portfolio-items">
+                    <div class="portfolio-item apps col-xs-12 col-sm-4 col-md-3">
+                        <div class="recent-work-wrap">
+                            <img class="img-responsive" src="images/portfolio/recent/item1.png"  th:src="@{/public/images/portfolio/full/item1.png}"  alt="">
+                            <div class="overlay">
+                                <div class="recent-work-inner">
+                                    <h3><a href="#">Business theme</a></h3>
+                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
+                                    <a class="preview" href="images/portfolio/full/item1.png"  th:href="@{/public/portfolio/full/item1.png}"  rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
+                                </div> 
+                            </div>
+                        </div>
+                    </div><!--/.portfolio-item-->
+
+                    <div class="portfolio-item joomla bootstrap col-xs-12 col-sm-4 col-md-3">
+                        <div class="recent-work-wrap">
+                            <img class="img-responsive" src="images/portfolio/recent/item2.png"  th:src="@{/public/images/portfolio/full/item2.png}"  alt="">
+                            <div class="overlay">
+                                <div class="recent-work-inner">
+                                    <h3><a href="#">Business theme</a></h3>
+                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
+                                    <a class="preview" href="images/portfolio/full/item2.png"  th:href="@{/public/images/portfolio/full/item2.png}" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
+                                </div> 
+                            </div>
+                        </div>          
+                    </div><!--/.portfolio-item-->
+
+                    <div class="portfolio-item bootstrap wordpress col-xs-12 col-sm-4 col-md-3">
+                        <div class="recent-work-wrap">
+                            <img class="img-responsive" src="images/portfolio/recent/item3.png"  th:src="@{/public/images/portfolio/full/item3.png}"  alt="">
+                            <div class="overlay">
+                                <div class="recent-work-inner">
+                                    <h3><a href="#">Business theme</a></h3>
+                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
+                                    <a class="preview" href="images/portfolio/full/item3.png"  th:href="@{/public/images/portfolio/full/item3.png}"  rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
+                                </div> 
+                            </div>
+                        </div>        
+                    </div><!--/.portfolio-item-->
+
+                    <div class="portfolio-item joomla wordpress apps col-xs-12 col-sm-4 col-md-3">
+                        <div class="recent-work-wrap">
+                            <img class="img-responsive" src="images/portfolio/recent/item4.png"  th:src="@{/public/images/portfolio/full/item4.png}"  alt="">
+                            <div class="overlay">
+                                <div class="recent-work-inner">
+                                    <h3><a href="#">Business theme</a></h3>
+                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
+                                    <a class="preview" href="images/portfolio/full/item4.png"  th:href="@{/public/images/portfolio/full/item4.png}" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
+                                </div> 
+                            </div>
+                        </div>           
+                    </div><!--/.portfolio-item-->
+          
+                    <div class="portfolio-item joomla html bootstrap col-xs-12 col-sm-4 col-md-3">
+                        <div class="recent-work-wrap">
+                            <img class="img-responsive" src="images/portfolio/recent/item5.png"  th:src="@{/public/images/portfolio/full/item5.png}"  alt="">
+                            <div class="overlay">
+                                <div class="recent-work-inner">
+                                    <h3><a href="#">Business theme</a></h3>
+                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
+                                    <a class="preview" href="images/portfolio/full/item5.png"  th:href="@{/public/images/portfolio/full/item5.png}"  rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
+                                </div> 
+                            </div>
+                        </div>      
+                    </div><!--/.portfolio-item-->
+
+                    <div class="portfolio-item wordpress html apps col-xs-12 col-sm-4 col-md-3">
+                        <div class="recent-work-wrap">
+                            <img class="img-responsive" src="images/portfolio/recent/item6.png"  th:src="@{/public/images/portfolio/full/item6.png}" alt="">
+                            <div class="overlay">
+                                <div class="recent-work-inner">
+                                    <h3><a href="#">Business theme</a></h3>
+                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
+                                    <a class="preview" href="images/portfolio/full/item6.png"  th:href="@{/public/images/portfolio/full/item6.png}"  rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
+                                </div> 
+                            </div>
+                        </div>         
+                    </div><!--/.portfolio-item-->
+
+                    <div class="portfolio-item wordpress html col-xs-12 col-sm-4 col-md-3">
+                        <div class="recent-work-wrap">
+                            <img class="img-responsive" src="images/portfolio/recent/item7.png"  th:src="@{/public/images/portfolio/full/item7.png}"  alt="">
+                            <div class="overlay">
+                                <div class="recent-work-inner">
+                                    <h3><a href="#">Business theme</a></h3>
+                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
+                                    <a class="preview" href="images/portfolio/full/item7.png"  th:href="@{/public/images/portfolio/full/item7.png}"  rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
+                                </div> 
+                            </div>
+                        </div>          
+                    </div><!--/.portfolio-item-->
+
+                    <div class="portfolio-item wordpress html bootstrap col-xs-12 col-sm-4 col-md-3">
+                        <div class="recent-work-wrap">
+                            <img class="img-responsive" src="images/portfolio/recent/item8.png"  th:src="@{/public/images/portfolio/full/item8.png}"  alt="">
+                            <div class="overlay">
+                                <div class="recent-work-inner">
+                                    <h3><a href="#">Business theme</a></h3>
+                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
+                                    <a class="preview" href="images/portfolio/full/item8.png" th:href="@{/public/images/portfolio/full/item8.png}" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
+                                </div> 
+                            </div>
+                        </div>          
+                    </div><!--/.portfolio-item-->
+                </div>
+            </div>
+        </div>
+    </section><!--/#portfolio-item-->
+	
+
+<div th:replace="fragments/footer :: footer">&copy; 2016 OSMSH</div>
+
+    
+</body>
+</html>

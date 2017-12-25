@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Page menu</title>
+</head>
+<body id="body">
+	<!--
+    Only the internal content of the following div is included within
+    the template, in menu fragment
+    -->
+	<nav class="navbar navbar-default navbar-static-top"
+		data-th-fragment="menu">
+
+		<div class="container">
+
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed"
+					data-toggle="collapse" data-target="#mainnav" aria-expanded="false">
+					<span class="sr-only">Menu</span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span>
+				</button>
+
+				<!-- Brand logo -->
+				<div class="organization-logo navbar-brand">
+					<a title="ocmms" href="/" data-th-href="@{/}"> <img alt="ocmms"
+						data-th-src="@{/public/img/logo.png}"
+						src="../../static/public/img/logo.png" />
+					</a>
+				</div>
+				<!-- Name application -->
+				<div class="application-name navbar-brand hidden-xs">
+					<a href="/" data-th-href="@{/}">ocmms</a>
+				</div>
+
+			</div>
+			<!-- /navbar-header -->
+
+			<div id="mainnav" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav" id="entitiesMenuEntries">
+					<!-- menu actions -->
+					<li class="dropdown" id="action-entry" data-z="6327d396"><a
+						href="#" class="dropdown-toggle" data-toggle="dropdown"
+						role="button" aria-haspopup="true" aria-expanded="false"
+						data-th-utext="#{label_menu_entry(#{label_action})}">Action<span
+							class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<!-- TASK MENU BEGIN -->
+							<li><li class="dropdown" id="task-entry" data-z="6327d396"><a
+								href="#" class="dropdown-toggle" data-toggle="dropdown"
+								role="button" aria-haspopup="true" aria-expanded="false"
+								data-th-utext="#{label_menu_entry(#{label_task})}">Memo<span
+									class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="/task" data-th-href="@{/task}"
+										data-th-text="#{label_list_entity(#{label_task})}">List
+											Memoes</a></li>
+									<li><a href="/task/create-form"
+										data-th-href="@{/task/create-form}"
+										data-th-text="#{label_create_entity(#{label_task})}">Create
+											City</a></li></ul></li></li>
+					<!-- TASK MENU END -->
+					<!-- MEMO MEUN BEGIN -->
+					<li><li class="dropdown" id="memo-entry" data-z="6327d396"><a
+						href="#" class="dropdown-toggle" data-toggle="dropdown"
+						role="button" aria-haspopup="true" aria-expanded="false"
+						data-th-utext="#{label_menu_entry(#{label_memo})}">Memo<span
+							class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="/memo" data-th-href="@{/memo}"
+								data-th-text="#{label_list_entity(#{label_memo})}">List
+									Memoes</a></li>
+							<li><a href="/memo/create-form"
+								data-th-href="@{/memo/create-form}"
+								data-th-text="#{label_create_entity(#{label_memo})}">Create
+									City</a></li></ul></li></li>
+					<!-- MEMO MEUN END -->
+					<!-- extruderShaftReplaceRecord MEUN BEGIN -->
+					<li>
+					<li class="dropdown" id="extruderShaftReplaceRecord-entry" data-z="6327d396"><a
+						href="#" class="dropdown-toggle" data-toggle="dropdown"
+						role="button" aria-haspopup="true" aria-expanded="false"
+						data-th-utext="#{label_menu_entry(#{label_extruderShaftReplaceRecord})}">Memo<span
+							class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="/extruderShaftReplaceRecord" data-th-href="@{/extruderShaftReplaceRecord}"
+								data-th-text="#{label_list_entity(#{label_extruderShaftReplaceRecord})}">List
+									Memoes</a></li>
+							<li><a href="/extruderShaftReplaceRecord/create-form"
+								data-th-href="@{/extruderShaftReplaceRecord/create-form}"
+								data-th-text="#{label_create_entity(#{label_extruderShaftReplaceRecord})}">Create
+									City</a></li>
+
+						</ul></li>
+					</li>
+					<!-- extruderShaftReplaceRecord MEUN END -->
+				</ul>
+				</li>
+
+
+				<!-- menu actions end-->
+
+
+
+				<!-- menu Data-->
+				<li class="dropdown" id="data-entry" data-z="6327d396"><a
+					href="#" class="dropdown-toggle" data-toggle="dropdown"
+					role="button" aria-haspopup="true" aria-expanded="false"
+					data-th-utext="#{label_menu_entry(#{label_data})}">Users<span
+						class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<!-- FunctionLoacation MENU BEGIN -->
+							<li><li class="dropdown" id="task-entry" data-z="6327d396"><a
+								href="#" class="dropdown-toggle" data-toggle="dropdown"
+								role="button" aria-haspopup="true" aria-expanded="false"
+								data-th-utext="#{label_menu_entry(#{label_functionLocation})}">functionLocation<span
+									class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="/functionLocation" data-th-href="@{/functionLocation}"
+										data-th-text="#{label_list_entity(#{label_functionLocation})}">List
+											Memoes</a></li>
+									<li><a href="/functionLocation/create-form"
+										data-th-href="@{/functionLocation/create-form}"
+										data-th-text="#{label_create_entity(#{label_functionLocation})}">Create
+											City</a></li></ul></li></li>
+					<!-- FunctionLoacation MENU END -->
+					<!-- Equipment Master MEUN BEGIN -->
+					<li><li class="dropdown" id="memo-entry" data-z="6327d396"><a
+						href="#" class="dropdown-toggle" data-toggle="dropdown"
+						role="button" aria-haspopup="true" aria-expanded="false"
+						data-th-utext="#{label_menu_entry(#{label_equipmentMasterData})}">Memo<span
+							class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="/equipmentMasterData" data-th-href="@{/equipmentMasterData}"
+								data-th-text="#{label_list_entity(#{label_equipmentMasterData})}">List
+									Memoes</a></li>
+							<li><a href="/equipmentMasterData/create-form"
+								data-th-href="@{/equipmentMasterData/create-form}"
+								data-th-text="#{label_create_entity(#{label_equipmentMasterData})}">Create
+									City</a></li></ul></li></li>
+					<!-- Equipment Master MEUN END -->
+
+					</ul></li>
+				<!--end Data menu-->
+				<!-- menu Documents-->
+				<li class="dropdown" id="task-entry" data-z="6327d396"><a
+					href="#" class="dropdown-toggle" data-toggle="dropdown"
+					role="button" aria-haspopup="true" aria-expanded="false"
+					data-th-utext="#{label_menu_entry(#{label_document})}">Users<span
+						class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="/task/create-form"
+							data-th-href="@{/task/create-form}"
+							data-th-text="#{label_create_entity(#{label_task})}">Create
+								Users</a></li>
+						<li><a href="/task" data-th-href="@{/task}"
+							data-th-text="#{label_list_entity(#{label_task_plural})}">List
+								Users</a></li>
+
+					</ul></li>
+				<!-- menu task end-->
+
+
+				<li class="dropdown" id="userflow-entry" data-z="8c85955a"><a
+					href="#" class="dropdown-toggle" data-toggle="dropdown"
+					role="button" aria-haspopup="true" aria-expanded="false"
+					data-th-utext="#{label_menu_entry(#{label_userflow})}">userflow<span
+						class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="userflow" data-th-href="@{userflow}"
+							data-th-text="#{label_userflow}">userflow</a></li>
+					</ul></li>
+
+				<!-- menu system -->
+
+				<li class="dropdown" id="action-entry" data-z="6327d396"><a
+					href="#" class="dropdown-toggle" data-toggle="dropdown"
+					role="button" aria-haspopup="true" aria-expanded="false"
+					data-th-utext="#{label_menu_entry(#{label_system})}">System<span
+						class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="/user" data-th-href="@{/user}"
+							data-th-text="#{label_list_entity(#{label_user_plural})}">List
+								Users</a></li>
+					</ul></li>
+
+				<!-- menu system end-->
+				</ul>
+				<!-- Language select -->
+				<ul class="nav navbar-nav navbar-right upper-nav languages"
+					data-th-replace="fragments/languages :: languages">
+					<!-- Content replaced by the session template fragment language.html
+                -->
+					<span>Language data</span>
+				</ul>
+
+				<!-- User menu -->
+				<ul class="nav navbar-nav navbar-right upper-nav session"
+					data-th-replace="fragments/session-links :: session">
+					<!-- Content replaced by the session template fragment session-links.html
+                -->
+					<span>User session data</span>
+				</ul>
+
+
+				<!-- User menu links -->
+				<ul class="nav navbar-nav navbar-right upper-nav links"
+					data-th-replace="fragments/session-links :: links">
+					<!-- Content replaced by the links template fragment session-links.html
+                -->
+					<span>User session data</span>
+				</ul>
+			</div>
+
+		</div>
+	</nav>
+
+	<!--
+    Only the internal content of the following div is included within
+    the template, in menu-languages fragment
+    -->
+	<nav class="navbar navbar-default navbar-static-top"
+		data-th-fragment="menu-languages">
+
+		<div class="container">
+
+			<div class="navbar-header">
+
+				<!-- Brand logo -->
+				<div class="organization-logo navbar-brand">
+					<a title="ocmms" href="/" data-th-href="@{/}"> <img alt="ocmms"
+						data-th-src="@{/public/img/logo.png}"
+						src="../../static/public/img/logo.png" />
+					</a>
+				</div>
+				<!-- Name application -->
+				<div class="application-name navbar-brand hidden-xs">
+					<a href="/" data-th-href="@{/}">ocmms</a>
+				</div>
+
+			</div>
+			<!-- /navbar-header -->
+
+			<div id="mainnav" class="navbar-collapse collapse">
+
+				<!-- Language select -->
+				<ul class="nav navbar-nav navbar-right upper-nav languages"
+					data-th-replace="fragments/languages :: languages">
+					<!-- Content replaced by the session template fragment language.html
+                -->
+					<span>Language data</span>
+				</ul>
+
+			</div>
+
+		</div>
+	</nav>
+
+</body>
+</html>

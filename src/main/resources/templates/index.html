@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+	xmlns:sd="http://www.thymeleaf.org/spring-data">
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title th:text="#{company.title}">OSMPEC</title>
+
+<!-- Bootstrap Core CSS -->
+<link href="..r../../esourcses/vendor/bootstrap/css/bootstrap.min.css"
+	rel="stylesheet"
+	th:href="@{/webjars/bootstrap/dist/css/bootstrap.css}" />
+
+<!-- Custom Fonts -->
+<link
+	href="../../../resources/vendor/font-awesome/css/font-awesome.min.css"
+	rel="stylesheet" type="text/css"
+	th:href="@{/webjars/font-awesome/css/font-awesome.css}" />
+
+<!-- Animate Css -->
+<link href="../../../resources/css/animate.css"
+	rel="stylesheet" th:href="@{/public/css/animate.css}" />
+	
+<!-- PrettyPhoto Css -->
+<link href="../../../resources/css/prettyPhoto.css"
+	rel="stylesheet" th:href="@{/public/css/prettyPhoto.css}" />
+
+<!-- Style Css -->
+<link href="../../../resources/css/style.css"
+	rel="stylesheet" th:href="@{/public/css/style.css}" />
+	
+<!-- Bootstrap Form Helpers -->
+<link href="../../../resources/bootstrap-formhelpers.min.css"
+	rel="stylesheet" media="screen" th:href="@{/public/css/bootstrap-formhelpers.min.css}" />
+
+<!-- jQuery -->
+<script src="../../../webjars/jquery/dist/jquery.min.js"
+	th:src="@{/webjars/jquery/dist/jquery.min.js}"></script>
+	
+<!-- Bootstrap Core JavaScript -->
+<script src="../../../webjars/bootstrap/dist/js/bootstrap.min.js"
+	th:src="@{/webjars/bootstrap/dist/js/bootstrap.min.js}"></script>
+	
+	
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="../../../public/js/jquery.prettyPhoto.js"
+	th:src="@{/public/js/jquery.prettyPhoto.js}"></script>
+
+	<script src="../../../public/js/jquery.isotope.min.js"
+	th:src="@{/public/js/jquery.isotope.min.js}"></script>
+	
+	<script src="../../../public/js/wow.min.js"
+	th:src="@{/public/js/wow.min.js}"></script>
+	
+	<script src="../../../public/js/functions.js"
+	th:src="@{/public/js/functions.js}"></script>
+	
+	<!-- Bootstrap Form Helpers -->
+	<script src="../../../resources/js/bootstrap-formhelpers.min.js"
+	th:src="@{/public/js/bootstrap-formhelpers.min.js}"></script>
+   
+	
+	
+</head>
+<body>
+	<div th:replace="fragments/header :: header">&nbsp;</div>
+
+	<section id="main-slider" class="no-margin">
+		<div class="carousel slide">
+			<div class="carousel-inner">
+				<div class="item active"
+					style="background-image: url(../../../resources/images/slider/bg1.jpg)" th:style="'background:url('+ @{/public/images/slider/bg1.jpg} +');'" >
+					<div class="container">
+						<div class="row slide-margin">
+							<div class="col-sm-6">
+								<div class="carousel-content">
+									<h2 class="animation animated-item-1">
+										<t th:text="#{company.banner.start}">Welcome</t> <span th:text="#{company.banner.end}">Company</span>
+									</h2>
+									<p class="animation animated-item-2" th:text="#{company.slogan}">Accusantium doloremque
+										laudantium totam rem aperiam, eaque ipsa...</p>
+									<a class="btn-slide animation animated-item-3" href="#">Read
+										More</a>
+								</div>
+							</div>
+
+							<div class="col-sm-6 hidden-xs animation animated-item-4">
+								<div class="slider-img">
+									<img src="../../../resources/images/slider/img3.png" th:src="@{/public/images/slider/img3.png}" class="img-responsive"/>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<!--/.item-->
+			</div>
+			<!--/.carousel-inner-->
+		</div>
+		<!--/.carousel-->
+	</section>
+	<!--/#main-slider-->
+
+	<div class="feature">
+		<div class="container">
+			<div class="text-center">
+				<div class="col-md-3">
+					<div class="hi-icon-wrap hi-icon-effect wow fadeInDown"
+						data-wow-duration="1000ms" data-wow-delay="300ms">
+						<i class="fa fa-book"></i>
+						<h2 th:text="#{company.vision.professional}">Full Responsive</h2>
+						<p th:text="#{company.vision.professional.desc}">Quisque eu ante at tortor imperdiet gravida nec sed turpis
+							phasellus.</p>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="hi-icon-wrap hi-icon-effect wow fadeInDown"
+						data-wow-duration="1000ms" data-wow-delay="600ms">
+						<i class="fa fa-laptop"></i>
+						<h2 th:text="#{company.vision.standardization}">Full Responsive</h2>
+						<p th:text="#{company.vision.standardization.desc}">Quisque eu ante at tortor imperdiet gravida nec sed turpis
+							phasellus.</p>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="hi-icon-wrap hi-icon-effect wow fadeInDown"
+						data-wow-duration="1000ms" data-wow-delay="900ms">
+						<i class="fa fa-heart-o"></i>
+						<h2 th:text="#{company.vision.responsibility}">Full Responsive</h2>
+						<p th:text="#{company.vision.responsibility.desc}">Quisque eu ante at tortor imperdiet gravida nec sed turpis
+							phasellus.</p>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="hi-icon-wrap hi-icon-effect wow fadeInDown"
+						data-wow-duration="1000ms" data-wow-delay="1200ms">
+						<i class="fa fa-cloud"></i>
+						<h2 th:text="#{company.vision.sustainability}">Friendly Code</h2>
+						<p th:text="#{company.vision.sustainability.desc}">Quisque eu ante at tortor imperdiet gravida nec sed turpis
+							phasellus.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="about">
+		<div class="container">
+			<div class="col-md-6 wow fadeInDown" data-wow-duration="1000ms"
+				data-wow-delay="300ms">
+				<h2 th:text="#{company.about.us}">about us</h2>
+				<img src="../../../resources/images/6.jpg" th:src="@{/public/images/6.jpg}" class="img-responsive" />
+				<p th:text="#{company.about.us.desc}">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					Phasellus interdum erat libero, pulvinar tincidunt leo consectetur
+					eget. Curabitur lacinia pellentesque libero, pulvinar tincidunt leo
+					consectetur eget. Curabitur lacinia pellentesque libero, pulvinar
+					tincidunt leo consectetur eget. Curabitur lacinia pellentesque</p>
+			</div>
+
+			<div class="col-md-6 wow fadeInDown" data-wow-duration="1000ms"
+				data-wow-delay="600ms">
+				<h2 th:text="#{company.business.title}">Template built with Twitter Bootstrap</h2>
+				<p th:text="#{company.business.introduction.one}">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					Phasellus interdum erat libero, pulvinar tincidunt leo consectetur
+					eget. Curabitur lacinia pellentesque libero, pulvinar tincidunt leo
+					consectetur eget. Curabitur lacinia pellentesque libero, pulvinar
+					tincidunt leo consectetur eget. Curabitur lacinia pellentesque</p>
+				<p th:text="#{company.business.introduction.two}">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					Phasellus interdum erat libero, pulvinar tincidunt leo consectetur
+					eget. Curabitur lacinia pellentesque libero, pulvinar tincidunt leo
+					consectetur eget. Curabitur lacinia pellentesque libero, pulvinar
+					tincidunt leo consectetur eget. Curabitur lacinia pellentesque</p>
+				<p th:text="#{company.business.introduction.three}">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					Phasellus interdum erat libero, pulvinar tincidunt leo consectetur
+					eget. Curabitur lacinia pellentesque libero, pulvinar tincidunt leo
+					consectetur eget. Curabitur lacinia pellentesque libero, pulvinar
+					tincidunt leo consectetur eget. Curabitur lacinia pellentesque</p>
+					
+					<p th:text="#{company.business.introduction.four}">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					Phasellus interdum erat libero, pulvinar tincidunt leo consectetur
+					eget. Curabitur lacinia pellentesque libero, pulvinar tincidunt leo
+					consectetur eget. Curabitur lacinia pellentesque libero, pulvinar
+					tincidunt leo consectetur eget. Curabitur lacinia pellentesque</p>
+					
+					<p th:text="#{company.business.introduction.five}">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					Phasellus interdum erat libero, pulvinar tincidunt leo consectetur
+					eget. Curabitur lacinia pellentesque libero, pulvinar tincidunt leo
+					consectetur eget. Curabitur lacinia pellentesque libero, pulvinar
+					tincidunt leo consectetur eget. Curabitur lacinia pellentesque</p>
+					
+			</div>
+		</div>
+	</div>
+<!--
+	<div class="lates">
+		<div class="container">
+			<div class="text-center">
+				<h2 th:text="#{company.news.title}">Lates News</h2>
+			</div>
+			<div class="col-md-4 wow fadeInDown" data-wow-duration="1000ms"
+				data-wow-delay="300ms">
+				<img src="../../../resources/images/4.jpg" th:src="@{/public/images/4.jpg}" class="img-responsive" />
+				<h3 th:text="#{company.news.one.title}">Template built with Twitter Bootstrap</h3>
+				<p th:text="#{company.news.one.context}">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					Phasellus interdum erat libero, pulvinar tincidunt leo consectetur
+					eget. Curabitur lacinia pellentesque libero, pulvinar tincidunt leo
+					consectetur eget. Curabitur lacinia pellentesque libero, pulvinar
+					tincidunt leo consectetur eget. Curabitur lacinia pellentesque</p>
+			</div>
+
+			<div class="col-md-4 wow fadeInDown" data-wow-duration="1000ms"
+				data-wow-delay="600ms">
+				<img src="../../../resources/images/4.jpg" th:src="@{/public/images/4.jpg}" class="img-responsive" />
+				<h3 th:text="#{company.news.two.title}">Template built with Twitter Bootstrap</h3>
+				<p th:text="#{company.news.two.context}">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					Phasellus interdum erat libero, pulvinar tincidunt leo consectetur
+					eget. Curabitur lacinia pellentesque libero, pulvinar tincidunt leo
+					consectetur eget. Curabitur lacinia pellentesque libero, pulvinar
+					tincidunt leo consectetur eget. Curabitur lacinia pellentesque</p>
+			</div>
+
+			<div class="col-md-4 wow fadeInDown" data-wow-duration="1000ms"
+				data-wow-delay="900ms">
+				<img src="../../../resources/images/4.jpg" th:src="@{/public/images/4.jpg}" class="img-responsive" />
+				<h3 th:text="#{company.news.three.title}">Template built with Twitter Bootstrap</h3>
+				<p th:text="#{company.news.three.context}">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					Phasellus interdum erat libero, pulvinar tincidunt leo consectetur
+					eget. Curabitur lacinia pellentesque libero, pulvinar tincidunt leo
+					consectetur eget. Curabitur lacinia pellentesque libero, pulvinar
+					tincidunt leo consectetur eget. Curabitur lacinia pellentesque</p>
+			</div>
+		</div>
+	</div>
+
+	<section id="partner">
+		<div class="container">
+			<div class="center wow fadeInDown">
+				<h2 th:text="#{company.partner.title}">Our Partners</h2>
+				<p th:utext=#{company.partner.introduction}">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+					eiusmod tempor incididunt ut <br> et dolore magna aliqua. Ut
+					enim ad minim veniam
+				</p>
+			</div>
+
+			<div class="partners">
+				<ul>
+					<li><a href="#"><img class="img-responsive wow fadeInDown"
+							data-wow-duration="1000ms" data-wow-delay="300ms"
+							src="../../../resources/images/partners/partner1.png" th:src="@{/public/images/partners/partner1.png}"></a></li>
+					<li><a href="#"><img class="img-responsive wow fadeInDown"
+							data-wow-duration="1000ms" data-wow-delay="600ms"
+							src="../../../resources/images/partners/partner2.png" th:src="@{/public/images/partners/partner2.png}"></a></li>
+					<li><a href="#"><img class="img-responsive wow fadeInDown"
+							data-wow-duration="1000ms" data-wow-delay="900ms"
+							src="../../../resources/images/partners/partner3.png" th:src="@{/public/images/partners/partner3.png}"></a></li>
+					<li><a href="#"><img class="img-responsive wow fadeInDown"
+							data-wow-duration="1000ms" data-wow-delay="1200ms"
+							src="../../../resources/images/partners/partner4.png" th:src="@{/public/images/partners/partner4.png}"></a></li>
+					<li><a href="#"><img class="img-responsive wow fadeInDown"
+							data-wow-duration="1000ms" data-wow-delay="1500ms"
+							src="../../../resources/images/partners/partner5.png" th:src="@{/public/images/partners/partner5.png}"></a></li>
+				</ul>
+			</div>
+		</div>
+		</.container>
+	</section>
+	</#partner-->
+
+	<section id="conatcat-info">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-8">
+					<div class="media contact-info wow fadeInDown"
+						data-wow-duration="1000ms" data-wow-delay="600ms">
+						<div class="pull-left">
+							<i class="fa fa-phone"></i>
+						</div>
+						<div class="media-body">
+							<h2 th:text="#{company.contact.title}">Have a question or need a custom quote?</h2>
+							<p th:utext="#{company.contact.context}">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+								sed do eiusmod tempor incididunt ut labore dolore magna aliqua.
+								Ut enim ad minim veniam, quis nostrud exercitation +0123 456 70
+								80</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--/.container-->
+	</section>
+	<!--/#conatcat-info-->
+
+	<div th:replace="fragments/footer :: footer">&copy; 2016 OSMSH</div>
+
+
+	
+
+</body>
+</html>
